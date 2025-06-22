@@ -1,0 +1,52 @@
+.header{
+    
+    color:azure;
+    padding:50px;
+    background-color: brown;
+    height:100px
+}
+a{
+    color:azure;
+    text-decoration: none;
+    margin: 10px;
+}
+#home{
+    text-align: center;
+    background-color: aliceblue;
+    padding: 10px;
+}
+img{
+    border-radius: 25%;
+}
+div{
+     display:inline-block;
+     margin: 50px;
+     border:2px solid aliceblue;
+     padding: 10px;
+     border-radius: 10%;
+     transition:transform 0.3s ease;
+}
+div:hover{
+     transform:scale(1.05);
+}
+h2{
+    color:brown;
+}
+
+.class1{
+    border-radius: 10%;
+     border:2px solid brown;
+     display:flex;
+     flex-direction: column;
+     margin:0px 100px;
+     padding:30px;
+}
+label{
+    text-align: left;
+}
+button{
+    margin: 10px 100px;
+}
+footer{
+    text-align: center;
+}

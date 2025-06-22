@@ -1,0 +1,106 @@
+header{
+    background-color: brown;
+    color:whitesmoke;
+}
+.header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+a{
+    color: whitesmoke;
+    text-decoration: none;
+    margin: 10px;
+}
+a:hover{
+    color: darkgrey;
+}
+nav{
+    display: flex;
+    justify-content: end;
+}
+img{
+    padding: 2px;
+}
+#hero{
+    background-color:whitesmoke;
+    text-align: center;
+    padding: 10px;
+}
+button{
+    background-color: maroon ;
+    color:whitesmoke;
+
+}
+.card{
+     border:2px solid aliceblue;
+     padding: 10px;
+     border-radius: 10%;
+     transition:transform 0.3s ease;
+     margin: 30px;
+     background-color: aliceblue;
+}
+.card:hover{
+     transform:scale(1.05);
+}
+#courses{
+    display:flex;
+    justify-content: center;
+    background-color: rgb(99, 130, 130);
+    
+}
+.instructors{
+    background-color: whitesmoke;
+}
+.instructors img{
+    border-radius: 50%;
+    box-shadow: 0 2px 2px rgb(91, 15, 63);
+}
+.instructors p{
+    font-style: italic;
+}
+#testimonials{
+    background-color: azure;
+}
+#faqs{
+    background-color: whitesmoke;
+}
+#contact{
+    border-radius: 10%;
+     border:2px solid brown;
+     display:flex;
+     flex-direction: column;
+     margin:20px 100px;
+     padding:10px;
+     
+}
+.class1{
+    display: flex;
+    flex-direction: column;
+}
+span{
+    padding: 10px;
+    text-align: center;
+}
+@media (max-width: 576px){
+    .header .container{
+        align-items: center;
+        flex-direction: column;
+    }
+    nav{
+       flex-direction: column;
+        gap: 10px;
+        align-items: center;
+        padding-top: 10px; 
+    }
+    #courses,.card{
+        flex-direction: column;
+        gap: 10px;
+        align-items: center;
+    }
+    .card{
+        width: 150px;
+    }
+}   
+
