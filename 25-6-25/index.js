@@ -10,8 +10,6 @@ function addTask(){
     var spanTag= document.createElement("span");
     var delBtn=document.createElement("button");
     spanTag.textContent=taskName;
-    delBtn.style.backgroundColor= "red";
-    delBtn.style.color="white";
     delBtn.innerText="Delete";
     listItem.appendChild(spanTag)
     listItem.appendChild(delBtn)
