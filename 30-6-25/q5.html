@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+</head>
+<body>
+    <p>Hello World</p>
+    <button>Change Theme</button>
+    <script>
+        $(document).ready(function () {
+            let isDark=false;
+            $("button").click(function () {
+                if (isDark) {
+                     $('body').css({ 'background-color': 'white', 'color': 'black' });
+                } else {
+                    $('body').css({ 'background-color': 'black', 'color': 'white' });
+                }
+                isDark = !isDark;
+            });
+        });    
+    </script>
+</body>
+</html>

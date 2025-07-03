@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        body{
+            height: 2000px;
+        }
+        .fixbtn{
+            background-color: blue;
+            color:white;
+            position:fixed;
+            bottom: 20px;
+            right: 20px;
+        }
+        button{
+            display:none;
+        }
+    </style>
+</head>
+<body>
+    <button type="submit">Hi</button>
+    <script>
+        let lastScrollTop=0;
+        $(window).on('scroll',function(){
+            let currentScroll=$(this).scrollTop();
+            if (currentScroll<lastScrollTop){
+                $('button').addClass('fixbtn');
+            }
+            else{
+                $('button').removeClass('fixbtn');
+            }
+            lastScrollTop=currentScroll;
+        });
+
+    </script>
+
+    
+</body>
+</html>

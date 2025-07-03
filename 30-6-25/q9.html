@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <style>
+        #img1{
+            display:block;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    <div id="container">
+        <img src="https://tse4.mm.bing.net/th/id/OIP.yy2d9UQfRqm4ZIWfzHk9DAHaEc?rs=1&pid=ImgDetMain&o=7&rm=3" ,width="60px",height="60px" id="img1">
+    </div>
+    <div>
+        <img src="https://th.bing.com/th/id/R.c30ffd1f04f33eb25612c8c2b2f15c2a?rik=PY1h%2f890G7%2fY7A&riu=http%3a%2f%2f1.bp.blogspot.com%2f-VmcWhZfZ-KQ%2fUQGl-CraD8I%2fAAAAAAAABZA%2f5T_lmG4ovy0%2fs1600%2fSteampunk%2bFor%2bKids%2bLondon.jpg&ehk=pOfGE1LzqR6jyNcup7qJJ0kij7ElRhy8xrU%2bgiOZM2Y%3d&risl=&pid=ImgRaw&r=0",width="60px",height="60px">
+    </div>
+    <div>
+        <img src="https://tse2.mm.bing.net/th/id/OIP.BzeNhleplHigHvaBC3KEDQHaE7?rs=1&pid=ImgDetMain&o=7&rm=3" width="60px",height="60px" >
+    </div>
+    <button type="submit">Next</button>
+    <script>
+        let index=0;
+        let totalimages=3;
+        let images = $('#container img');
+        images.eq(index).show();
+        $('button').on(click,function(){
+            images.eq(index).hide();  
+            index=(index+1)%totalimages;
+            images.eq(index).show();
+        });
+    </script>
+    
+</body>
+</html>
