@@ -1,5 +1,11 @@
 var taskToDo = document.getElementById("taskbar")
 document.getElementById("btn").addEventListener("click",addTask)
+taskToDo.addEventListener("keydown",function(e){
+    if (e.key ==="Enter"){
+        addTask();
+    }
+}
+);
 function addTask(){
     var taskName =taskToDo.value
     if(taskName == ""){
@@ -20,11 +26,6 @@ function addTask(){
 function deleteTask(event){
     console.log(event.target.parentNode.remove())
 }
-document.getElementById("btn").addEventListener("keypress",function(e){
-    if (e.key ==="Enter"){
-        addTask()
-    }
-}
-)
+
 
 
